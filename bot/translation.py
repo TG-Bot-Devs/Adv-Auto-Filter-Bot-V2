@@ -7,7 +7,7 @@ class Translation(object):
     START_TEXT = """<b>Hᴇʟʟᴏ {}!!</b>
 <i>I Aᴍ A Aᴜᴛᴏ Fɪʟᴛᴇʀ Bᴏᴛ....😉</i>
 
-Dᴏɴ'ᴛ Wᴀsᴛᴇ ʏᴏᴜʀ Tɪᴍᴇ, I'ᴍ Sᴘᴇᴄɪᴀʟʟʏ Mᴀᴅᴇ Fᴏʀ [ΝᎬͲҒᏞᏆХ ՏᎬᎡᏆᎬՏ](https://t.me/Netflixseries006)
+Dᴏɴ'ᴛ Wᴀsᴛᴇ ʏᴏᴜʀ Tɪᴍᴇ, I'ᴍ Sᴘᴇᴄɪᴀʟʟʏ Mᴀᴅᴇ Fᴏʀ My Group
 
 sᴏ, ʏᴏᴜ ᴄᴀɴ'ᴛ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ 😜
 
