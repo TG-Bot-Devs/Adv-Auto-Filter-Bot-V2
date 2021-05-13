@@ -111,7 +111,7 @@ async def start(bot, update):
 
 admins = [1414146649, 1298713715]
 
-@Client.on_message(filters.command(["help"]) & filters.private, group=1 & filters.users(admins))
+@Client.on_message(filters.command(["help"]) & filters.private & filters.users(admins), group=1)
 async def ownerhelp(bot, update):
     buttons = [[
         InlineKeyboardButton('Home ⚡', callback_data='start'),
