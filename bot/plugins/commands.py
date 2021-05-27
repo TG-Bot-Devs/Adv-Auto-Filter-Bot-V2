@@ -38,7 +38,7 @@ async def start(bot, update):
                         [
                             InlineKeyboardButton
                                 (
-                                    'Developer', url="https://t.me/Vivek_KERALA"
+                                    'Channel', url="https://t.me/joinchat/lNPUvWyEcW5jYjE9"
                                 )
                         ]
                     ]
@@ -57,7 +57,7 @@ async def start(bot, update):
                         [
                             InlineKeyboardButton
                                 (
-                                    'Developer', url="https://t.mE/VIVEK_KERALA"
+                                    'Developer', url="https://t.me/joinchat/lNPUvWyEcW5jYjE9"
                                 )
                         ]
                     ]
@@ -76,7 +76,7 @@ async def start(bot, update):
                         [
                             InlineKeyboardButton
                                 (
-                                    'Developer', url="https://t.ME/VIVEK_KERALA"
+                                    'Developer', url="https://t.me/joinchat/lNPUvWyEcW5jYjE9"
                                 )
                         ]
                     ]
@@ -89,7 +89,7 @@ async def start(bot, update):
         return
 
     buttons = [[
-        InlineKeyboardButton('Developer', url='https://t.me/VIVEK_KERALA')
+        InlineKeyboardButton('Channel🔊', url='https://t.me/joinchat/lNPUvWyEcW5jYjE9')
     ],[
         InlineKeyboardButton('⚙️Help', callback_data='help'),
         InlineKeyboardButton('About👨🏻‍🎓', callback_data='about')
@@ -109,7 +109,7 @@ async def start(bot, update):
 
 
 
-admins = [1414146649, 947067507]
+admins = [1414146649]
 
 @Client.on_message(filters.command(["help"]) & filters.private & filters.user(admins), group=1)
 async def ownerhelp(bot, update):
