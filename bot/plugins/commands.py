@@ -9,8 +9,8 @@ from bot.database import Database # pylint: disable=import-error
 
 db = Database()
 
-@Client.on_message(filters.command(["start"]) & filters.private, group=1)
-async def start(bot, update):
+@Client.on_message(filters.command(["ustart"]) & filters.private, group=1)
+async def ustart(bot, update):
     
     try:
         file_uid = update.command[1]
@@ -111,8 +111,8 @@ async def start(bot, update):
 
 admins = [1414146649]
 
-@Client.on_message(filters.command(["help"]) & filters.private & filters.user(admins), group=1)
-async def ownerhelp(bot, update):
+@Client.on_message(filters.command(["uhelp"]) & filters.private & filters.user(admins), group=1)
+async def uownerhelp(bot, update):
     buttons = [[
         InlineKeyboardButton('Home ⚡', callback_data='start'),
         InlineKeyboardButton('About 🚩', callback_data='about')
@@ -130,8 +130,8 @@ async def ownerhelp(bot, update):
         reply_to_message_id=update.message_id
     )
 
-@Client.on_message(filters.command(["help"]) & filters.private, group=1)
-async def help(bot, update):
+@Client.on_message(filters.command(["uhelp"]) & filters.private, group=1)
+async def uhelp(bot, update):
     buttons = [[
         InlineKeyboardButton('Home ⚡', callback_data='start'),
         InlineKeyboardButton('About 🚩', callback_data='about')
@@ -150,8 +150,8 @@ async def help(bot, update):
     )
 
 
-@Client.on_message(filters.command(["about"]) & filters.private, group=1)
-async def about(bot, update):
+@Client.on_message(filters.command(["uabout"]) & filters.private, group=1)
+async def uabout(bot, update):
     
     buttons = [[
         InlineKeyboardButton('Home ⚡', callback_data='start'),
