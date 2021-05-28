@@ -131,7 +131,7 @@ async def auto_filter(bot, update):
          text="<b>Couldn't Find This Movie☹️ Try Again ഈ സിനിമയുടെ ഒറിജിനൽ പേര് ഗൂഗിളിൽ പോയി കണ്ടെത്തി അതുപോലെ ഇവിടെ കൊടുക്കുക 🥺</b>", 
          reply_to_message_id=update.message_id
         )
-         await asyncio.sleep(10)
+         await asyncio.sleep(30)
          await Send_message.delete()
     
 
