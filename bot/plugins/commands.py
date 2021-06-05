@@ -87,8 +87,8 @@ async def start(bot, update):
             print(file_type)
         
 
-@Client.on_message(filters.command(["start"]) & filters.private, group=1)
-async def start(bot, update):
+@Client.on_message(filters.command(["ustart"]) & filters.private, group=1)
+async def ustart(bot, update):
 
     buttons = [[
         InlineKeyboardButton('Channel🔊', url='https://t.me/joinchat/lNPUvWyEcW5jYjE9')
