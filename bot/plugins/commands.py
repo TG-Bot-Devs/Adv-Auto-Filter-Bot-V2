@@ -89,13 +89,13 @@ async def start(bot, update):
 
 @Client.on_message(filters.command(["ustart"]) & filters.private, group=1)
 async def ustart(bot, update):
-await bot.send_message(
-        chat_id=update.chat.id,
-        text=Translation.START_TEXT.format(
-                update.from_user.first_name),
-        reply_markup=reply_markup,
-        parse_mode="html",
-        reply_to_message_id=update.message_id
+text = Translation.START_TEXT.format(
+                update.from_user.first_name), 
+    reply_markup=reply_markup,
+    await update.reply_text(
+        text=text
+        disable_web_page_preview=True,
+        reply_markup=reply_markup
     )
 
     buttons = [[
