@@ -89,6 +89,14 @@ async def start(bot, update):
 
 @Client.on_message(filters.command(["ustart"]) & filters.private, group=1)
 async def ustart(bot, update):
+await bot.send_message(
+        chat_id=update.chat.id,
+        text=Translation.START_TEXT.format(
+                update.from_user.first_name),
+        reply_markup=reply_markup,
+        parse_mode="html",
+        reply_to_message_id=update.message_id
+    )
 
     buttons = [[
         InlineKeyboardButton('Channel🔊', url='https://t.me/joinchat/lNPUvWyEcW5jYjE9')
@@ -98,15 +106,6 @@ async def ustart(bot, update):
     ]]
     
     reply_markup = InlineKeyboardMarkup(buttons)
-
-    await bot.send_message(
-        chat_id=update.chat.id,
-        text=Translation.START_TEXT.format(
-                update.from_user.first_name),
-        reply_markup=reply_markup,
-        parse_mode="html",
-        reply_to_message_id=update.message_id
-    )
 
 
 admins = [1414146649]
