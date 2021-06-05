@@ -1136,7 +1136,7 @@ async def cb_max_page(bot, update: CallbackQuery):
         [
             InlineKeyboardButton
                 (
-                    "2 Pages", callback_data=f"set(pages|2|{chat_id}|{count})"
+                    "2 Pages", callback_data=f"set(pages|1|{chat_id}|{count})"
                 )
         ],
         [
