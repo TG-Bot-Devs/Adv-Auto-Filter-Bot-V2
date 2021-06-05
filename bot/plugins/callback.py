@@ -1064,7 +1064,7 @@ async def cb_max_buttons(bot, update: CallbackQuery):
         [
             InlineKeyboardButton
                 (
-                    "5 Filters", callback_data=f"set(per_page|5|{chat_id}|{count})"
+                    "3 Filters", callback_data=f"set(per_page|3|{chat_id}|{count})"
                 )
         ],
         [
@@ -1637,7 +1637,7 @@ async def callback_data(bot, update: CallbackQuery):
 
     query_data = update.data
 
-    if query_data == "start":
+    if query_data == "ustart":
         buttons = [[
             InlineKeyboardButton('My DEV 👨🏻‍🔬', url='https://t.me/Vivek_Kerala'),
             InlineKeyboardButton('Channel', url ='https://t.me/joinchat/lNPUvWyEcW5jYjE9')
