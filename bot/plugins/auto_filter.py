@@ -117,7 +117,7 @@ async def auto_filter(bot, update):
                         FIND["bot_details"] = bot_
                 
                 bot_ = FIND.get("bot_details")
-                file_link = f"https://t.me/{bot_.username}?ustart={unique_id}"
+                file_link = f"https://t.me/{bot_.username}?start={unique_id}"
             
             results.append(
                 [
