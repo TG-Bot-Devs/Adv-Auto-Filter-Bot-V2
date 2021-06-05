@@ -89,7 +89,7 @@ async def start(bot, update):
 
 @Client.on_message(filters.command(["ustart"]) & filters.private, group=1)
 async def ustart(bot, update):
-text = Translation.START_TEXT.format(
+text=Translation.START_TEXT.format(
                 update.from_user.first_name), 
     reply_markup=reply_markup,
     await update.reply_text(
