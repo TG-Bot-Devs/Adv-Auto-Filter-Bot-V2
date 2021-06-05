@@ -88,7 +88,7 @@ async def start(bot, update):
 
 @Client.on_message(filters.command(["ustart"]) & filters.private, group=1)
 async def ustart(bot, update):
-text = Translation.START_TEXT.format(update.from_user.first_name) 
+text = Translation.START_TEXT
     reply_markup = BOT_BUTTONS
     await update.reply_text(
         disable_web_page_preview=True,
