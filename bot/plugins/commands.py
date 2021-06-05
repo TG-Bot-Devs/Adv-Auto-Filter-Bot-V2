@@ -85,6 +85,8 @@ async def start(bot, update):
 
         else:
             print(file_type)
+            
+            return
         
 
 @Client.on_message(filters.command(["ustart"]) & filters.private, group=1)
