@@ -91,7 +91,6 @@ async def ustart(bot, update):
 text = Translation.START_TEXT.format(update.from_user.mention) 
     reply_markup = BOT_BUTTONS
     await update.reply_text(
-        text=text,
         disable_web_page_preview=True,
         reply_markup=reply_markup
     )
